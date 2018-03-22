@@ -12,38 +12,24 @@ var inputHeight;
 var inputWidth;
 var colorPicked;
 
-//make sure the values are initially gotten
-inputHeight = $("#inputHeight").val();
-inputWidth = $("#inputWidth").val();
-colorPicked = $("#colorPicker").val();
-
-//Pretty sure I don't need this in two places
-// $("#inputHeight").change(function() {inputHeight = $("#inputHeight").val();});
-// $("#inputWidth").change(function() {inputWidth = $("#inputWidth").val(); alert(inputWidth);});
-// $("#colorPicker").change(function() {colorPicked = $("#colorPicker").val();});
-
-
 function makeGrid()
 {
-  //Clear any existing grid, at least, it's supposed to...
+  /*Clear any existing grid, and then make the new grid.
+  The new grid will stay on the page until submit is clicked again.
+  At least, it's supposed to...
+  For whatever reason, it's disappearing (almost) immediately.
+  */
   var canvas = $("#pixelCanvas");
-  canvas.children().remove();
-  
-  //Redundant right?
-  // inputHeight = $("#inputHeight").val();
-  // inputWidth = $("#inputWidth").val();
-  // colorPicked = $("#colorPicker").val();
-  
-  //Why won't they change?
-  $("#inputHeight").change(function() {inputHeight = $("#inputHeight").val();});
-  $("#inputWidth").change(function() {inputWidth = $("#inputWidth").val();});
-  $("#colorPicker").change(function() {colorPicked = $("#colorPicker").val();});
+  if(canvas.children())
+  {
+    canvas.children().remove();
+  }
 
-  //Why damn it?
-  alert(inputHeight);
-  alert(inputWidth);
+  inputHeight = $("#inputHeight").val();
+  inputWidth = $("#inputWidth").val();
+  colorPicked = $("#colorPicker").val();
   
-  //It makes the grid fine on page load so yay...?
+  //Actually builds the grid and puts it onto the page.
   var newGrid;
   for(let i = 0; i < inputHeight; i++)
   {
@@ -64,6 +50,6 @@ function colorize()
   $(this).css("background-color", colorPicked);
 }
 
-//Why aren't these two lines working to have makeGrid and colorize run?
-$("#sizeSubmit").on("click", makeGrid());
-$("td").on("click", colorize());
+$("#colorPicker").change(function() {colorPicked = $("#colorPicker").val();});
+$("#sizeSubmit").on("click", function( event ){makeGrid(); event.preventDefault();});
+$("table").on("mousedown", "td", colorize);
