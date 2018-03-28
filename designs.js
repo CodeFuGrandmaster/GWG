@@ -12,8 +12,6 @@ function randomColor()
   {
     tempNum = Math.floor(Math.random() * 16) + 1;
     
-    alert(tempNum);
-    
     switch(tempNum)
     {
       case 1:
@@ -70,8 +68,6 @@ function randomColor()
     }
   }
   
-  alert(randColor);
-  
   return randColor;
 }
 
@@ -91,12 +87,10 @@ function randomGrid()
   }
   canvas.append(baseGrid);
   
-  randomColor();
-  
-  // for(let b = 0; b < canvas.cells.length; b++)
-  // {
-  //   canvas.cells[b].css("background-color", randomColor);
-  // }
+  for(let b = 0, cell; b < canvas.cells.length; b++)
+  {
+    canvas.cells[b].css("background-color", randomColor());
+  }
 }
 
 function makeGrid()
