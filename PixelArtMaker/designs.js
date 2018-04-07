@@ -3,7 +3,7 @@ var inputHeight;
 var inputWidth;
 var colorPicked;
 
-
+//Creates a random hex color code
 function randomColor()
 {
   let tempNum;
@@ -71,6 +71,7 @@ function randomColor()
   return randColor;
 }
 
+//Creates a grid on page load and randomly colors each cell using randomColor()
 function randomGrid()
 {
   let canvas = $("#pixelCanvas");
@@ -129,6 +130,7 @@ function colorize()
   $(this).css("background-color", colorPicked);
 }
 
+//When the document is ready, create a random grid
 $("document").ready(function() {randomGrid();});
 
 //Ensures that a new color will be selected
