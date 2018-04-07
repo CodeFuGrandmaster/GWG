@@ -1,0 +1,36 @@
+/* add your CSS here */
+
+
+.card{
+  max-width: 300px;
+  max-height: 650px;
+  border: 1px solid grey;
+  padding: 10px;
+  background-color: skyblue;
+}
+
+.aniPhoto{
+  display: block;
+  margin-bottom: 10px;
+}
+
+.info{
+  border: 1px solid grey;
+  padding: 10px;
+  max-width: 280px;
+}
+
+ul{
+  list-style-type: none;
+  margin-left: 0;
+  padding: 0;
+}
+
+.factoid{
+  font-style: italic;
+  font-size: 10pt;
+}
+
+.label{
+  font-weight: bold;
+}
