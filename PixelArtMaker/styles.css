@@ -47,6 +47,22 @@ input[type=color] {
     height: 40px;
 }
 
+#instructionFrame {
+  border: solid red;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  align-content: center;
+  text-align: left;
+  font-weight: bold;
+  background-color: green;
+  margin: 0 auto;
+  width: 850px;
+}
+
+#instructionFrame p{
+  text-align: center;
+}
+
 #canvasFrame {
   border: solid red;
   padding-bottom: 20px;
