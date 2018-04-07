@@ -1,0 +1,19 @@
+You've learned a lot about web development so far. I want you to take a moment to write down your thoughts about web development here. Answer the following questions:
+  * What new skills have you learned?
+  * What has been easy?
+  * What has been difficult?
+  * How have you used the problem solving strategies from the first project to overcome challenges so far?
+
+---
+
+Your response goes here!
+
+I had to redo the Mockup project as the original version was on a computer back home, I'm travelling, and I hadn't started using GitHub yet.
+
+*I have learned some pretty handy keyboard shortcuts, as well as how to plan out my projects better and improve my workflow.
+
+*It has pretty much all been easy.
+
+*Except some of the particulars of JQuery.
+
+*See first answer.
