@@ -1,0 +1,72 @@
+body {
+  background: black;
+  color: white;
+  font-family: "Lucida Console", Monaco, monospace;
+}
+
+
+hr {
+  width: 65%;
+  height: 5px;
+  margin-left: 35%;
+  background: red;
+}
+
+.logo {
+  display: flex;
+  flex: wrap;
+  width: 100px;
+  height: 100px;
+}
+
+.top {
+  /*background: blue;*/
+}
+
+.top h1, h3{
+  text-align: right;
+}
+
+.top h1 {
+  font-size: 64px;
+  margin: 0;
+}
+
+.top h3 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.main-frame {
+  /*background: red;*/
+}
+
+.main-pic {
+  padding: 10px 10px 10px 10px;
+  max-width: 600px;
+  max-height: 600px;
+}
+
+.project-pics {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
+
+.project-img {
+  min-width: 200px;
+  min-height: 200px;
+  max-width: 300px;
+  max-height: 300px;
+  padding: 20px;
+}
+
+@media screen and (max-width: 500px) {
+  body { background: red;}
+}
+
+@media screen and (max-width: 800px) {
+  body { background: blue;}
+}
