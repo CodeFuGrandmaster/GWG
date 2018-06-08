@@ -1,0 +1,90 @@
+
+body {
+  background: #000;
+  color: red;
+  font-family: "Lucida Console", Monaco, monospace;
+}
+
+.logo {
+  display: flex;
+  flex: wrap;
+  width: 100px;
+  height: 100px;
+}
+
+.top {
+  /*background: blue;*/
+}
+
+.top h1, h3{
+  text-align: right;
+}
+
+.top h1 {
+  font-size: 64px;
+  margin: 0;
+}
+
+.top h3 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.main-frame {
+  /*background: red;*/
+  display: flex;
+  flex: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-pic {
+  padding: 10px 10px 10px 10px;
+  max-width: 400px;
+  max-height: 400px;
+}
+
+.project-pics {
+  display: flex;
+  flex: wrap;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
+
+.caption {
+  display: flex;
+  flex: wrap;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  padding: 10px;
+}
+
+.project-img {
+  width: 50%;
+  height: 50%;
+  padding: 20px;
+}
+
+@media screen and (max-width: 360px) {
+  body {
+    background: blue;
+    width: 250px;
+  }
+  
+  .main-pic {
+    width: 250px;
+  }
+  
+  footer h2 {
+    font-size: 12px;
+  }
+  
+  .project-img {
+    max-width: 200px;
+    max-height: 200px;
+  }
+  
+}
